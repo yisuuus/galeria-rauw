@@ -1,0 +1,114 @@
+<!-- 
+    Proyecto: Galería de Fotos de Rauw Alejandro
+    Creado por: YISUS
+    Descripción: Página web con slider giratorio, galería visual responsive y lightbox para ampliación de imágenes.
+    Fecha: Agosto 2024
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="centralcss.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10"><!-- slider giratorio de fotos -->
+            <!-- cada item es una imagen dentro del slider -->
+            <div class="item" style="--position: 1"><img src="rauwwall1.webp" alt=""></div>
+            <div class="item" style="--position: 2"><img src="rauwwall2.webp" alt=""></div>
+            <div class="item" style="--position: 3"><img src="rauwwall3.webp" alt=""></div>
+            <div class="item" style="--position: 4"><img src="rauwwall4.webp" alt=""></div>
+            <div class="item" style="--position: 5"><img src="rauwwall5.webp" alt=""></div>
+            <div class="item" style="--position: 6"><img src="rauwwall6.webp" alt=""></div>
+            <div class="item" style="--position: 7"><img src="rauwwall7.webp" alt=""></div>
+            <div class="item" style="--position: 8"><img src="rauwwall8.webp" alt=""></div>
+            <div class="item" style="--position: 9"><img src="rauwwall9.webp" alt=""></div>
+            <div class="item" style="--position: 10"><img src="rauwwall10.webp" alt=""></div>
+        </div>
+        <!-- Presentación de la pagina -->
+        <div class="content">
+            <h1 data-content="EL ZORRO">
+                EL ZORRO
+            </h1>
+            <div class="author">
+                <h2>YISUS</h2>
+                <p><b>Galeria</b></p>
+                <p>
+                    Disfrute de las mejores fotos de Rauw
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="galeria"> <!-- Galeria de fotos -->
+        <div class="galeriacaja">
+            <div class="heading">
+                <h3>Galeria <span>de fotos</span></h3>
+            </div>
+            <div class="caja"> <!-- contenedor de todas las imagenes -->
+                <div class="fotos">
+                    <!-- Primer contenedor -->
+                    <img src="rauwwall1.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall2.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall3.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall4.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall5.webp" alt="Foto de Rauw Alejandro">
+                </div>
+                <div class="fotos">
+                    <!-- Segundo contenedor -->
+                    <img src="rauwwall6.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall7.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall8.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall9.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall10.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall11.webp" alt="Foto de Rauw Alejandro">
+                </div>
+                <div class="fotos">
+                    <!-- Tercer contenedor -->
+                    <img src="rauwwall11.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall12.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall13.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall14.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall15.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall16.webp" alt="Foto de Rauw Alejandro">
+                </div>
+                <div class="fotos-extra"><!-- Fotos extras que se muestran al pulsar 'ver más' -->
+                    <img src="rauwwall17.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall18.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall19.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall20.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall21.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall22.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall23.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall24.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall25.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall26.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall27.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall28.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall29.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall30.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall31.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall32.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall33.webp" alt="Foto de Rauw Alejandro">
+                    <img src="rauwwall34.webp" alt="Foto de Rauw Alejandro">
+                </div>
+            </div>
+            <div class="boton"><!-- Boton de 'ver más' para mostrar más fotos -->
+                <a href="#" id="verMasBtn">Ver más</a>
+            </div>
+        </div>
+    </div>
+    <!-- Lightbox para ampliar las imagenes al hacer clic -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="lightbox-close">&times;</span>
+        <img src="" alt="Imagen ampliada" class="lightbox-img" id="lightbox-img">
+    </div>
+    <!-- Script con funcionalidades JS -->
+    <script src="centraljs.js"></script>
+</body>
+</html>
